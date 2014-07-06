@@ -1,14 +1,13 @@
 set nocompatible
 syntax on
-colo pablo
+colo torte
 :imap jk <Esc>
+
+"sets mapping so kl in normal mode will invert the 'paste' option and show the
+"value of that option
+nnoremap kl :set invpaste paste?<CR>
 set pastetoggle=kl
+set showmode
 
-#execute pathogen#infect()
-#filetype plugin indent on
-#syntax enable
-#set background=dark
-#let g:solarized_termcolors=256
-#colorscheme solarized
-
+"automatically source any changes to vimrc
 autocmd BufWritePost .vimrc source %
