@@ -1,6 +1,6 @@
 alias e='exit'
-alias vip='vi ~/.bash_profile'
-alias sourcep='source ~/.bash_profile'
+alias vip='vi ~/.bashrc'
+alias sourcep='source ~/.bashrc'
 function tabname {
    printf "\e]1;$1\a"
 }
